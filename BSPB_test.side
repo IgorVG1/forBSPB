@@ -1,0 +1,514 @@
+{
+  "id": "7121163a-af34-416d-b32f-678280cfdbc7",
+  "version": "2.0",
+  "name": "BSPB_test",
+  "url": "https://www.bspb.ru",
+  "tests": [{
+    "id": "93eee89d-2d46-4eb4-8c07-1d371ad85a0e",
+    "name": "1_Доступность главной страницы",
+    "commands": [{
+      "id": "6e0c12ca-b8c6-42c6-9cc4-d7690e136e4e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef398878-8d46-4ac4-b8d6-2394ffaba3fa",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=div.css-3aej2k",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7a910fd-ce56-4f70-9f3d-098a39cbad07",
+      "comment": "Проверка: Загрузка главной страницы.",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6e8a4ae9-137e-42a7-aae1-a5a005d003dd",
+    "name": "2_Работа поиска по сайту",
+    "commands": [{
+      "id": "9e810ea4-4be4-4bf7-8712-cac8200fdc19",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "048d9c22-8209-4865-a28d-77ab951cf2d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-9f19sy:nth-child(1) > .chakra-icon",
+      "targets": [
+        ["css=.css-9f19sy:nth-child(1) > .chakra-icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3574d4b3-e431-467f-80f2-046e620d3445",
+      "comment": "",
+      "command": "type",
+      "target": "css=input.chakra-input.css-1154eac",
+      "targets": [],
+      "value": "кредит"
+    }, {
+      "id": "346b9408-6052-42f6-8379-76440138e6c4",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//p[@class=\"chakra-text css-0\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3af4ee6-8241-4af7-82c7-ef39b43f8565",
+      "comment": "Ввод запроса в поисковую строку и проверка выдачи результатов",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "75dff704-b5d1-4357-bc03-addbfb0ff055",
+    "name": "3_Открытие заглавных разделов сайта",
+    "commands": [{
+      "id": "c5cc8b6c-f937-4cfe-8de2-977f0f1aa89c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fc1a6fa-f354-47ef-9954-21eb541e080e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=a.chakra-link.css-qoez2h[href=\"/\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3f1aaa0-81a6-436b-bd8a-ea3e9ff96f49",
+      "comment": "Открыта страница \"Частным клиентам\"",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "590e7761-645d-4bc5-94eb-9f4564320266",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Контакты",
+      "targets": [
+        ["linkText=Контакты", "linkText"],
+        ["css=.css-35z2bt > .chakra-link:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Контакты')]", "xpath:link"],
+        ["xpath=//div[@id='app-wrapper']/div[2]/div/nav/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/investors/contacts')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Контакты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ca6b245-8f95-4254-8b05-35a955e5c5c3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=(//h2[text()='Направьте нам официальный письменный запрос'])[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfeae8bd-36be-4ecf-9480-e27b47272307",
+      "comment": "Открыта страница \"Контакты для связи\"",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efbc383b-447e-447d-a168-9685385637b1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Бизнесу",
+      "targets": [
+        ["linkText=Бизнесу", "linkText"],
+        ["css=.css-1w600oj > .chakra-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Бизнесу')]", "xpath:link"],
+        ["xpath=//div[@id='app-wrapper']/div[2]/div/nav/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/business')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Бизнесу')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98fc41b4-4d51-46ba-a00d-864a3110189d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=a.chakra-link.css-qoez2h[href=\"/business\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9fd424b2-0616-4d03-9fa6-5d3992246975",
+      "comment": "Открыта страница \"Бизнесу\"",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "451a2519-8ec1-45c5-9025-70caec6c164a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ВЭД",
+      "targets": [
+        ["linkText=ВЭД", "linkText"],
+        ["css=.css-9f19sy:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'ВЭД')]", "xpath:link"],
+        ["xpath=//div[@id='app-wrapper']/div[2]/div/nav/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/foreign-trade')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'ВЭД')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b717a70-8226-46dd-9a86-041fba857e35",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=a.chakra-link.css-qoez2h[href=\"/foreign-trade\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4edfb69b-086f-46f9-bb0b-486596f37ed7",
+      "comment": "Открыта страница \"ВЭД\"",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5056dc1e-7022-4830-8325-cc7e0195adc0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Финансовые рынки",
+      "targets": [
+        ["linkText=Финансовые рынки", "linkText"],
+        ["css=.css-9f19sy:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Финансовые рынки')]", "xpath:link"],
+        ["xpath=//div[@id='app-wrapper']/div[2]/div/nav/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/finance')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Финансовые рынки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0efd250f-bd88-465b-96d0-dae33010b901",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=a.chakra-link.css-qoez2h[href=\"/finance\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0e79bcd-debb-4800-a0e4-850acceba204",
+      "comment": "Открыта страница \"Финансовые рынки\"",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "966f7bf9-1740-4d17-825b-549d044f6c1c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Инвесторам",
+      "targets": [
+        ["linkText=Инвесторам", "linkText"],
+        ["css=.css-9f19sy:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Инвесторам')]", "xpath:link"],
+        ["xpath=//div[@id='app-wrapper']/div[2]/div/nav/div/a[6]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/investors')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Инвесторам')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cf7a4bb-024b-4af7-b808-48bc7a224622",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=a.chakra-link.css-qoez2h[href=\"/investors\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "518deeab-06a1-4acc-93ae-8e9e33ee7ca3",
+      "comment": "Открыта страница \"Инвесторам\"",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bdf77bb-a243-4bfb-afeb-eec0f321b194",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Контакты",
+      "targets": [
+        ["linkText=Контакты", "linkText"],
+        ["css=.css-35z2bt > .chakra-link:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Контакты')]", "xpath:link"],
+        ["xpath=//div[@id='app-wrapper']/div[2]/div/nav/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/investors/contacts')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Контакты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd41df44-0ee5-4c06-8852-0445ef17eabd",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//h2[text()='Контакты для инвесторов']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22757f0b-1f8b-4440-81c7-98b2a4ff2fec",
+      "comment": "Открыта страница \"Контакты для инвесторов\"",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8be7d42b-129f-4a43-9de0-35f5216b24dd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Офисы и банкоматы",
+      "targets": [
+        ["linkText=Офисы и банкоматы", "linkText"],
+        ["css=.css-35z2bt > .chakra-link:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Офисы и банкоматы')]", "xpath:link"],
+        ["xpath=//div[@id='app-wrapper']/div[2]/div/nav/div[4]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/map?is=offices&type=private ')]", "xpath:href"],
+        ["xpath=//div[4]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Офисы и банкоматы')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "665b1afb-db75-43da-82b8-d4f323c1fb08",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//h2[text()='Офисы и банкоматы']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc8e18d0-000a-4da4-9551-f0903e492bcd",
+      "comment": "Открыта страница \"Офисы и банкоматы\"",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "132862bf-56b1-42c5-862c-382ac7907749",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Private Banking",
+      "targets": [
+        ["linkText=Private Banking", "linkText"],
+        ["css=.css-1w600oj > .chakra-link:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Private Banking')]", "xpath:link"],
+        ["xpath=//div[@id='app-wrapper']/div[2]/div/nav/div/a[5]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://pb.bspb.ru/')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Private Banking')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "053db169-ea45-452a-b15b-c273f43f94ab",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=img.t981__logo.t-img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d293de38-c304-4527-a328-3f5892f172e1",
+      "comment": "Открыта страница \"Private Banking\"",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "24580443-36b3-4e64-b084-53ef5e8dfca7",
+    "name": "4_Проверка калькулятора вкладов",
+    "commands": [{
+      "id": "c0c46f33-c685-46b6-abb7-8e028830e3be",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abec8537-bdc4-430f-94db-f5ca834c3778",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[text()='367 дней']",
+      "targets": [
+        ["css=.chakra-wrap__listitem:nth-child(4) .chakra-radio__label", "css:finder"],
+        ["xpath=//div[@id='tabs-:R5tajltm:--tabpanel-0']/div/div/div/div/div/div[3]/div[2]/div/div/ul/li[4]/label/span[2]", "xpath:idRelative"],
+        ["xpath=//li[4]/label/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'367 дней')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "447cbf04-f0f6-4414-98b3-e8fd47a6d55d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//span[text()='367 дней'][@data-checked=\"\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81cd4afa-62a1-4154-a6c7-49f8d887be32",
+      "comment": "",
+      "command": "type",
+      "target": "css=input[wfd-id=\"id3\"]",
+      "targets": [
+        ["css=.chakra-stack .chakra-input", "css:finder"],
+        ["xpath=//input[@value='10 000 000 ₽']", "xpath:attributes"],
+        ["xpath=//div[@id='tabs-:R5tajltm:--tabpanel-0']/div/div/div/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "10 000 000 ₽"
+    }, {
+      "id": "9609a472-d7cc-4580-9ae1-7f7d37fb68c1",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//h2[text()='1 729 425 ₽']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "929b145b-3352-4610-a0e3-fbafa17575e9",
+      "comment": "Открытие калькулятора, ввод суммы, проверка расчета.  ",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a5ed8c67-957b-4472-8542-4e14c4900092",
+    "name": "5_Проверка перехода в раздел «Карты»",
+    "commands": [{
+      "id": "9074ad28-be30-468e-9bce-2a3780d8da04",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10d5fba2-3edf-4894-b8fd-e9b7da551eb5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[text()='Посмотреть на карте']",
+      "targets": [
+        ["linkText=Посмотреть на карте", "linkText"],
+        ["css=.css-18o8ssx", "css:finder"],
+        ["xpath=//a[contains(text(),'Посмотреть на карте')]", "xpath:link"],
+        ["xpath=//div[@id='app-wrapper']/main/div/div[9]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/map')])[3]", "xpath:href"],
+        ["xpath=//div[9]/div/div/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Посмотреть на карте')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c88c46e6-702a-4c46-9434-3ea1e6cd1922",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b236e27-7dc7-44de-9aff-c051141b4014",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=ymaps[class=\"ymaps-2-1-79-events-pane ymaps-2-1-79-user-selection-none\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "031cccf7-39e6-47a5-8c03-28dd68d58433",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[text()='Списком']",
+      "targets": [
+        ["linkText=Посмотреть на карте", "linkText"],
+        ["css=.css-18o8ssx", "css:finder"],
+        ["xpath=//a[contains(text(),'Посмотреть на карте')]", "xpath:link"],
+        ["xpath=//div[@id='app-wrapper']/main/div/div[9]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/map')])[3]", "xpath:href"],
+        ["xpath=//div[9]/div/div/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Посмотреть на карте')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2192e784-6b91-4461-b2f6-2ec1c1a952bb",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=(//div[@class=\"chakra-container css-1g9eqn7\"])[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db529b1f-1ab1-4978-b744-d8bc3f3ea397",
+      "comment": "Показан список банкоматов",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "483d5702-e3bf-4836-a745-98bf0fd54008",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=(//select[@class=\"chakra-select css-1kp1rbz\"])[1]",
+      "targets": [],
+      "value": "Офисы"
+    }, {
+      "id": "1b82769f-d5e4-4425-80e0-8f8fd2c7a44d",
+      "comment": "",
+      "command": "select",
+      "target": "css=select[name=\"scheduleType\"]",
+      "targets": [],
+      "value": "Физические лица"
+    }, {
+      "id": "ff4d3f3c-88cf-44a0-9681-711d58f00c01",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=div.css-1g9eqn7",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aff62a92-bb70-4682-8277-aa55e1b7f588",
+      "comment": "Показан список офисов для физических лиц",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca9e91c9-0782-4266-860d-2399fc52e07c",
+      "comment": "",
+      "command": "select",
+      "target": "css=select[name=\"scheduleType\"]",
+      "targets": [],
+      "value": "Юридические лица"
+    }, {
+      "id": "865b435b-f4a5-4d8c-ac9d-d853f5b7b443",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=div.css-1g9eqn7",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a46c0a3-a666-44a6-bb4c-863b49111bbf",
+      "comment": "Показан список офисов для юридических лиц",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b7331d85-affb-4bb7-aea5-caf157338b84",
+    "name": "bspb_gui",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["93eee89d-2d46-4eb4-8c07-1d371ad85a0e", "6e8a4ae9-137e-42a7-aae1-a5a005d003dd", "75dff704-b5d1-4357-bc03-addbfb0ff055", "24580443-36b3-4e64-b084-53ef5e8dfca7", "a5ed8c67-957b-4472-8542-4e14c4900092"]
+  }],
+  "urls": ["https://www.bspb.ru/"],
+  "plugins": []
+}
